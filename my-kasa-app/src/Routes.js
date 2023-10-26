@@ -9,10 +9,10 @@ const AppRoutes = () => {
   return (
     <Router>
       <Routes>
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/property/:id" component={Property} />
-        <Route component={NotFound} />
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/property/:id" element={<Property />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );
