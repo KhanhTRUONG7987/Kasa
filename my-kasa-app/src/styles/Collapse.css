@@ -1,0 +1,49 @@
+.section-header {
+    margin-top: 2em;
+    background: var(--Red, #ff6060);
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    width: 60em;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    align-self: stretch;
+    margin-bottom: 1em; 
+  }
+  
+  .collapse-icon {
+    font-size: 24px;
+  }
+  
+  .collapse-content {
+    display: none;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 0 0;
+    gap: 1em;
+    width: 100%; /* Set to 100% to fill the parent container */
+  }
+  
+  .section-header.active {
+    background: #ff6060;
+  }
+  
+  .section-header.active + .collapse-content {
+    display: block;
+  }
+  
