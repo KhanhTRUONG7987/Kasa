@@ -1,3 +1,5 @@
+@import '../index.css'; /* Import global styles */
+
 .ErrorPage {
   display: flex;
   flex-direction: column;

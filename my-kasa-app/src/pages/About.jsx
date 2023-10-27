@@ -6,6 +6,26 @@ import "../styles/Header.css";
 import "../styles/Section.css";
 import "../styles/Footer.css";
 import "../styles/Collapse.css";
+import "../styles/AboutPage.css";
+
+const aboutData = [
+  {
+    topBar: "Flabilité",
+    contenu: "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.",
+  },
+  {
+    topBar: "Respect",
+    contenu: "La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.",
+  },
+  {
+    topBar: "Service",
+    contenu: "La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.",
+  },
+  {
+    topBar: "Sécurité",
+    contenu: "La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.",
+  },
+];
 
 const About = () => {
   return (
@@ -17,38 +37,13 @@ const About = () => {
             src={require("../assets/images/Image source 2.png")}
             alt="Section 1"
           />
-
-          <Collapse topBar="Flabilité">
-            <ul>
-              <li>1</li>
-              <li>2</li>
-              <li>3</li>
-            </ul>
-          </Collapse>
-
-          <Collapse topBar="Respect">
-            <ul>
-              <li>1</li>
-              <li>2</li>
-              <li>3</li>
-            </ul>
-          </Collapse>
-
-          <Collapse topBar="Service">
-            <ul>
-              <li>1</li>
-              <li>2</li>
-              <li>3</li>
-            </ul>
-          </Collapse>
-
-          <Collapse topBar="Sécurité">
-            <ul>
-              <li>1</li>
-              <li>2</li>
-              <li>3</li>
-            </ul>
-          </Collapse>
+          <div className="dropdowns">
+            {aboutData.map((data, index) => (
+              <Collapse key={index} topBar={data.topBar}>
+                <p className="contenuP">{data.contenu}</p>
+              </Collapse>
+            ))}
+          </div>
         </section>
       </main>
       <Footer />

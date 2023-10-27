@@ -1,3 +1,5 @@
+@import '../index.css'; /* Import global styles */
+
 .section-header {
     margin-top: 2em;
     background: var(--Red, #ff6060);
@@ -36,7 +38,7 @@
     justify-content: center;
     flex: 1 0 0;
     gap: 1em;
-    width: 100%; /* Set to 100% to fill the parent container */
+    width: 100%; 
   }
   
   .section-header.active {
