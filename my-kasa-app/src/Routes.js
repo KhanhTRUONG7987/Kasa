@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Property from './pages/Property';
-import NotFound from './pages/NotFound';
+import NotFound from './pages/ErrorPage';
 
 const AppRoutes = () => {
   return (
