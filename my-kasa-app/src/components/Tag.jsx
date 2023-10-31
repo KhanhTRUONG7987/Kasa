@@ -1,7 +1,7 @@
 import React from 'react';
 
-function Tag({ dataId, properties }) {
-  const property = properties.find((item) => item.id === dataId);
+function Tag({ dataId, data }) {
+  const property = data.find((property) => property.id === dataId);
 
   if (!property) {
     return <div className="tag">Property not found.</div>;
@@ -9,7 +9,9 @@ function Tag({ dataId, properties }) {
 
   return (
     <div className="tag">
-      <p>Tags: {property.tags.join(', ')}</p>
+      {property.tags.map((tag, index) => (
+        <li key={index}>{tag}</li>
+      ))}
     </div>
   );
 }

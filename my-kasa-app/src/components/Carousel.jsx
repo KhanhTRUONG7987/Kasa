@@ -1,28 +1,32 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faArrowAltCircleLeft,
-  faArrowAltCircleRight,
+  faAngleLeft,
+  faAngleRight,
 } from "@fortawesome/free-solid-svg-icons";
-import '../styles/Carousel.css'; 
-
+import "../styles/Carousel.css";
 
 const Carousel = ({ pictures }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handlePrevClick = () => {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + pictures.length) % pictures.length
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? prevIndex : prevIndex - 1
     );
   };
 
   const handleNextClick = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % pictures.length);
+    setCurrentIndex((prevIndex) =>
+      prevIndex === pictures.length - 1 ? prevIndex : prevIndex + 1
+    );
   };
 
   return (
     <div className="carousel">
-      <div className="carousel-images">
+      <div
+        className="carousel-images"
+        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+      >
         {pictures.map((image, index) => (
           <div
             key={index}
@@ -39,10 +43,12 @@ const Carousel = ({ pictures }) => {
       </div>
       <div className="carousel-controls">
         <div className="carousel-control prev" onClick={handlePrevClick}>
-          <FontAwesomeIcon icon={faArrowAltCircleLeft} /> {/* Previous icon */}
+        <FontAwesomeIcon color="#fff" icon={faAngleLeft} />{" "}
+          {/* Previous icon */}
         </div>
         <div className="carousel-control next" onClick={handleNextClick}>
-          <FontAwesomeIcon icon={faArrowAltCircleRight} /> {/* Next icon */}
+          <FontAwesomeIcon color="#fff" icon={faAngleRight} />{" "}
+          {/* Next icon */}
         </div>
       </div>
     </div>

@@ -2,25 +2,29 @@
 
 .property-page {
   margin: 0 auto;
-  padding: 20px;
 }
 
+.wrapper {
+  padding: 0em 2em 0em 2em;
+}
 .property-page h1 {
   font-size: 24px;
   margin: 0 0 20px;
 }
 
 .property-details {
-  background-color: #f7f7f7;
-  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 20px;
   border-radius: 5px;
   color: #ff6060;
 }
 
 .titleDiv {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  gap: 1em;
 }
 
 .title-text {
@@ -29,19 +33,18 @@
 }
 
 .location-text {
-  color: #777;
+  color: #ff6060;
 }
 
 .hostDiv {
-  margin-top: 20px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  gap: 0.5em;
 }
 
 .host-name {
   font-size: 16px;
   font-weight: 600;
+  max-width: 3em;
 }
 
 .host-picture img {
@@ -51,17 +54,25 @@
   object-fit: cover;
 }
 
+.tagRateDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .rateDiv {
   margin-top: 20px;
   display: flex;
   align-items: center;
+  color: #ff6060;
+}
+.svg-inline--fa {
+  height: 2em;
 }
 
 svg {
-  width: 20px;
-  height: 20px;
-  fill: rgba(227, 227, 227, 1);
-  margin-right: 5px;
+  width: 1.5em;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
 }
 
 svg.active {
@@ -71,4 +82,22 @@ svg.active {
 .tag {
   margin-top: 20px;
   font-size: 16px;
+}
+
+.dropdowns {
+  display: flex;
+  flex-direction: row;
+  gap: 5em;
+  margin: 0 0 3em 0;
+}
+
+.section-header {
+  border-radius: 0.6em;
+  z-index: 1000;
+}
+
+li.contenuP {
+  border-radius: 0em;
+  margin-top: -0.3em;
+  color: #ff6060;
 }

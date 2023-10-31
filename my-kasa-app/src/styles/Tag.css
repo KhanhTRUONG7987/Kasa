@@ -1,6 +1,19 @@
 .tag {
-  background-color: #ff6060;
+  display: flex;
+  gap: 5px; 
   color: #fff;
-  padding: 4px 8px;
-  border-radius: 4px;
+}
+
+.tag li {
+  width: 10em;
+  height: 1.5em;
+  border-radius: 10px;
+  background: #FF6060;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  list-style: none;
+  flex-shrink: 0;
 }
