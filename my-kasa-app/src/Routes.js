@@ -8,6 +8,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import "./styles/Header.css";
 import "./styles/Footer.css";
+import "./index.css";
 
 const AppRoutes = () => {
   return (

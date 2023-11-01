@@ -5,24 +5,27 @@
   box-sizing: border-box;
 }
 
-html, body, #root, .App {
-  height: 100%;
-}
-
 a {
   text-decoration: none;
   color: #FF6060;
 }
 
-/* Global styles */
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #FFF;
   color: #FFF;
+  padding-bottom: 5em;
 }
 
 .App {
   display: flex;
   flex-direction: column;
   flex: 1;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 20000;
 }
