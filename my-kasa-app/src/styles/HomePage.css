@@ -1,0 +1,5 @@
+@import '../index.css'; /* Import global styles */
+
+.home-page {
+  margin: 0 2em 0 2em;
+}

@@ -4,12 +4,13 @@ import data from "../data/properties.json";
 import Card from "../components/Card";
 import "../styles/Section.css";
 import "../styles/Card.css";
+import "../styles/HomePage.css";
 
 function Home() {
   const selected = data.filter((property) => property);
   return (
-    <div className="Home">
-      <main>
+    <div>
+      <main className="home-page">
         <section className="section1">
           <img
             src={require("../assets/images/Image source 1.png")}

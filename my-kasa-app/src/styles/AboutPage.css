@@ -1,6 +1,7 @@
 @import '../index.css'; /* Import global styles */
 
 .about-page {
+  margin: 0 2em 0 2em;
   display: flex;
   flex-direction: column;
   gap: 1em

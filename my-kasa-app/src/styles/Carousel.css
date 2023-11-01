@@ -20,6 +20,7 @@
 
 .carousel-image img {
   width: 100%;
+  border-radius: 1em;
 }
 
 .carousel-image.active {

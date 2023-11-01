@@ -1,7 +1,7 @@
 @import '../index.css'; /* Import global styles */
 
 .property-page {
-  margin: 0 auto;
+  margin: 0 2em 0 2em;
 }
 
 .wrapper {
