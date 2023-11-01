@@ -20,6 +20,8 @@
 
 .carousel-image img {
   width: 100%;
+  clip-path: inset(0 0 0 0); /* create a rectangular clip path */
+  object-fit: cover; /* image covers the entire rectangular path */
   border-radius: 1em;
 }
 

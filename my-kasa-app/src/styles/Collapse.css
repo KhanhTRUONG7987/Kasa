@@ -8,7 +8,7 @@
   position: relative;
   width: 100%;
   background: #ff6060;
-  border-radius: 5px;
+  border-radius: 0.5em;
   cursor: pointer;
   padding: 10px;
   color: #ffffff;
@@ -20,6 +20,7 @@
   font-size: 1em;
   align-self: stretch;
   transition: background 0.3s ease-in-out;
+  z-index: 5;
 }
 
 .collapse-content {
@@ -28,7 +29,7 @@
   overflow: hidden;
   background: #f6f6f6;
   color: #ff6060;
-  border-radius: 0px 0px 10px 10px;
+  border-radius: 0px 0px 0.5em 0.5em;
   transition: max-height 0.3s ease-in-out, transform 0.3s ease-in-out;
   transform-origin: top;
   transform: scaleY(0); /* Initially set */
@@ -37,6 +38,8 @@
 .collapse-content.open {
   max-height: 100vh; /* expand to the full height */
   transform: scaleY(1); 
+  margin-top: -0.3em;
+  z-index: 3;
 }
 
 .collapse-content p.contenu-p {
