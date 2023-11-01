@@ -1,10 +1,6 @@
 import React from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import Collapse from "../components/Collapse";
-import "../styles/Header.css";
 import "../styles/Section.css";
-import "../styles/Footer.css";
 import "../styles/Collapse.css";
 import "../styles/AboutPage.css";
 
@@ -29,8 +25,7 @@ const aboutData = [
 
 const About = () => {
   return (
-    <div className="About">
-      <Header />
+    <div className="about-page">
       <main>
         <section className="section1">
           <img
@@ -40,13 +35,12 @@ const About = () => {
           <div className="dropdowns">
             {aboutData.map((data, index) => (
               <Collapse key={index} topBar={data.topBar}>
-                <p className="contenuP">{data.contenu}</p>
+                <p className="contenu-p">{data.contenu}</p>
               </Collapse>
             ))}
           </div>
         </section>
       </main>
-      <Footer />
     </div>
   );
 };

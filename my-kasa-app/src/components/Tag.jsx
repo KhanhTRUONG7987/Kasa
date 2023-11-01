@@ -8,7 +8,7 @@ function Tag({ dataId, data }) {
   }
 
   return (
-    <div className="tag">
+    <div className="tag-div">
       {property.tags.map((tag, index) => (
         <li key={index}>{tag}</li>
       ))}

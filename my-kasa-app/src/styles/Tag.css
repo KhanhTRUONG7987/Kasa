@@ -1,10 +1,12 @@
-.tag {
+@import '../index.css'; /* Import global styles */
+
+.tag-div {
   display: flex;
   gap: 5px; 
-  color: #fff;
 }
 
-.tag li {
+.tag-div li {
+  margin: 0em 0.5em 0em 0em;
   width: 10em;
   height: 1.5em;
   border-radius: 10px;

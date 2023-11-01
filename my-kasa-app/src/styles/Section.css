@@ -16,14 +16,4 @@
   border-radius: 25px;
   clip-path: inset(0 0 0 0); /* create a rectangular clip path */
   object-fit: cover; /* image covers the entire rectangular path */
-}
-
-.section1 p {
-  color: #fff;
-  font-weight: 500;
-  font-size: 48px;
-  position: absolute;
-  top: 50%; /* vertically in the center */
-  left: 50%; /* horizontally in the center */
-  transform: translate(-50%, -50%); /* Center */
-}
+} 

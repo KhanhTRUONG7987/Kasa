@@ -1,19 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import data from "../data/properties.json";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import Card from "../components/Card";
-import "../styles/Header.css";
 import "../styles/Section.css";
 import "../styles/Card.css";
-import "../styles/Footer.css";
 
 function Home() {
   const selected = data.filter((property) => property);
   return (
     <div className="Home">
-      <Header />
       <main>
         <section className="section1">
           <img
@@ -37,7 +32,6 @@ function Home() {
           </div>
         </div>
       </main>
-      <Footer />
     </div>
   );
 }

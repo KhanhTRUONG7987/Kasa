@@ -1,59 +1,66 @@
-@import '../index.css'; /* Import global styles */
+@import "../index.css"; /* Import global styles */
 
 .carousel {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .carousel-images {
-    display: flex;
-    width: 100%;
-    height:500px;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .carousel-image {
-    flex: 0 0 100%;
-  }
+  position: relative;
+  overflow: hidden;
+}
 
-  .carousel-image img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .carousel-image.active {
-    transform: translateX(0);
-  }
-  
-  .carousel-controls {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 1rem;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top : 0;
-  }
-  
-  .carousel-control {
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.carousel-images {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+}
 
-  .carousel-control.prev {
-    font-size: xx-large;
-  }
-  
-  .carousel-control.next {
-    font-size: xx-large;
-  }
-  
-  .carousel-control.prev:hover,
-  .carousel-control.next:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-  }
-  
+.carousel-image {
+  flex: 0 0 100%;
+  position: relative;
+}
+
+.carousel-image img {
+  width: 100%;
+}
+
+.carousel-image.active {
+  transform: translateX(0);
+}
+
+.carousel-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.carousel-control {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-control.prev {
+  font-size: xx-large;
+  margin-left: 1em;
+}
+
+.carousel-control.next {
+  font-size: xx-large;
+  margin-right: 1em;
+}
+
+.carousel-index {
+  position: absolute;
+  bottom: 10px; 
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 500;
+  z-index: 1000;
+}

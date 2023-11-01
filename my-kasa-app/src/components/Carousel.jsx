@@ -1,9 +1,4 @@
 import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faAngleLeft,
-  faAngleRight,
-} from "@fortawesome/free-solid-svg-icons";
 import "../styles/Carousel.css";
 
 const Carousel = ({ pictures }) => {
@@ -43,14 +38,37 @@ const Carousel = ({ pictures }) => {
       </div>
       <div className="carousel-controls">
         <div className="carousel-control prev" onClick={handlePrevClick}>
-        <FontAwesomeIcon color="#fff" icon={faAngleLeft} />{" "}
-          {/* Previous icon */}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="48"
+            height="80"
+            viewBox="0 0 48 80"
+            fill="none"
+          >
+            <path
+              d="M47.0399 7.42497L39.9199 0.344971L0.359863 39.945L39.9599 79.545L47.0399 72.465L14.5199 39.945L47.0399 7.42497Z"
+              fill="white"
+            />
+          </svg>
         </div>
         <div className="carousel-control next" onClick={handleNextClick}>
-          <FontAwesomeIcon color="#fff" icon={faAngleRight} />{" "}
-          {/* Next icon */}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="48"
+            height="81"
+            viewBox="0 0 48 81"
+            fill="none"
+          >
+            <path
+              d="M0.959961 72.9877L8.03996 80.0677L47.64 40.4677L8.03996 0.867676L0.959961 7.94768L33.48 40.4677L0.959961 72.9877Z"
+              fill="white"
+            />
+          </svg>
         </div>
       </div>
+      <p className="carousel-index">
+          {currentIndex + 1}/{pictures.length}
+      </p>
     </div>
   );
 };

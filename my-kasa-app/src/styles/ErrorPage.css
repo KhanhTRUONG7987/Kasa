@@ -1,6 +1,6 @@
 @import '../index.css'; /* Import global styles */
 
-.ErrorPage {
+.error-page {
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -1,13 +1,13 @@
-@import "../index.css"; /* Import global styles */
+@import '../index.css'; /* Import global styles */
 
-.collapseDiv {
-  width: 60em;
-
+.collapse-div {
+  width: 40em;
 }
+
 .section-header {
+  position: relative;
   width: 100%;
-  margin-top: 2em;
-  background: var(--Red, #ff6060);
+  background: #ff6060;
   border-radius: 5px;
   cursor: pointer;
   padding: 10px;
@@ -17,37 +17,58 @@
   align-items: center;
   outline: none;
   border: none;
-  font-size: 16px;
+  font-size: 1em;
   align-self: stretch;
-}
-
-.collapse-icon {
-  font-size: 24px;
+  transition: background 0.3s ease-in-out;
 }
 
 .collapse-content {
-  display: none;
+  position: relative;
+  max-height: 0;
+  overflow: hidden;
   background: #f6f6f6;
+  color: #ff6060;
   border-radius: 0px 0px 10px 10px;
+  transition: max-height 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transform-origin: top;
+  transform: scaleY(0); /* Initially set */
 }
 
-p.contenuP {
+.collapse-content.open {
+  max-height: 100vh; /* expand to the full height */
+  transform: scaleY(1); 
+}
+
+.collapse-content p.contenu-p {
   background: #f6f6f6;
   padding: 20px;
-  border-radius: 0px 0px 10px 10px;color:#f6f6f6;
-  font-size: 24px;
+  border-radius: 0px 0px 10px 10px;
+  color: #ff6060;
+  font-size: 1em;
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
-  background: #f6f6f6;
+  transition: max-height 0.1s ease-in-out;
 }
 
-.section-header.active {
-  width: 100%;
-  overflow: hidden;
-  display: block;
-  background: #f6f6f6;
-  max-height: 0;
-  transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out,transform 0.3s ease-in-out;
-  transform-origin: top; 
+.svg-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.svg-collapse {
+  position: absolute;
+  left: 94.4%; 
+  transition: transform 0.3s ease-in-out;
+  transform: rotate(-180deg); /* initially rotated to the left */
+}
+
+.svg-collapse-down {
+  transform: rotate(0deg);
+  top: 30%; 
+}
+
+.svg-collapse-up {
+  transform: rotate(180deg);
 }

@@ -1,7 +1,5 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleDown, faAngleUp } from '@fortawesome/free-solid-svg-icons'; // Import FontAwesome icons
+import React, { useState } from "react";
+import PropTypes from "prop-types";
 import "../styles/Collapse.css";
 
 const Collapse = ({ children, topBar }) => {
@@ -12,12 +10,29 @@ const Collapse = ({ children, topBar }) => {
   };
 
   return (
-    <div className='collapseDiv'>
-      <button onClick={toggleCollapse} className="section-header">
-      {topBar}
-        {isOpen ? <FontAwesomeIcon icon={faAngleDown} /> : <FontAwesomeIcon icon={faAngleUp} />}
-      </button>
-      {isOpen && <div className="collapse-content">{children}</div>}
+    <div className="collapse-div">
+      <div
+        onClick={toggleCollapse}
+        className={`section-header ${isOpen ? "active" : ""}`}
+      >
+        {topBar}
+        <svg
+          className={`svg-collapse ${
+            isOpen ? "svg-collapse-down" : "svg-collapse-up"
+          }`}
+          xmlns="http://www.w3.org/2000/svg"
+          width="25"
+          height="14"
+          viewBox="0 0 25 14"
+          fill="none"
+        >
+          <path
+            d="M13.2103 13.8522C12.5409 14.5216 11.4538 14.5216 10.7843 13.8522L0.502064 3.56991C-0.167355 2.90049 -0.167355 1.81335 0.502064 1.14393C1.17148 0.474515 2.25862 0.474515 2.92804 1.14393L12 10.2159L21.072 1.14929C21.7414 0.479871 22.8285 0.479871 23.4979 1.14929C24.1674 1.81871 24.1674 2.90585 23.4979 3.57526L13.2157 13.8575L13.2103 13.8522Z"
+            fill="white"
+          />
+        </svg>
+      </div>
+      <div className={`collapse-content ${isOpen ? 'open' : ''}`}>{children}</div>
     </div>
   );
 };
