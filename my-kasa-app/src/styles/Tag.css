@@ -1,16 +1,16 @@
-@import '../index.css'; /* Import global styles */
+@import "../index.css"; /* Import global styles */
 
 .tag-div {
   display: flex;
-  gap: 5px; 
+  gap: 5px;
+  flex-wrap: wrap;
 }
 
 .tag-div li {
-  margin: 0em 0.5em 0em 0em;
-  width: 10em;
+  width: auto;
   height: 1.5em;
   border-radius: 10px;
-  background: #FF6060;
+  background: #ff6060;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,4 +18,5 @@
   text-align: center;
   list-style: none;
   flex-shrink: 0;
+  padding: 0.5em;
 }

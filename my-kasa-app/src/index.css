@@ -7,13 +7,13 @@
 
 a {
   text-decoration: none;
-  color: #FF6060;
+  color: #ff6060;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: #FFF;
-  color: #FFF;
+  font-family: "Montserrat";
+  background-color: #fff;
+  color: #fff;
   padding-bottom: 5em;
 }
 
@@ -28,4 +28,304 @@ body {
   bottom: 0;
   width: 100%;
   z-index: 20000;
+}
+
+@media (max-width: 1024px) {
+  /* Header component */
+  header {
+    margin: 1em 2em 1em 2.5em;
+  }
+
+  /* Card Component */
+  .card-image {
+    width: 23.5em;
+    height: 23.5em;
+  }
+
+  /* Section styles */
+  .section-text {
+    font-size: 3em;
+  }
+
+  /* Collapse component */
+  .svg-collapse {
+    left: 90%;
+  }
+
+  /* error page */
+  .error-page h1 {
+    font-size: 2em;
+  }
+
+  /* Carousel Component */
+  .carousel-image img {
+    height: 380px;
+  }
+
+  /* About page */
+  .about-page {
+    margin: 0 1em 0 1em;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Header component */
+  header {
+    margin: 1em 0.7em 1em 0.7em;
+  }
+
+  header img {
+    margin: 10px auto;
+    max-width: 120px;
+  }
+
+  nav ul {
+    gap: 1em;
+    align-items: center;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+  nav a {
+    font-size: 18px;
+  }
+
+  /* Card Component */
+  .card-gallery-container {
+    background: #fff;
+    margin: 0.5em;
+  }
+
+  .card-image {
+    width: 29em;
+    height: 29em;
+  }
+
+  /* Section styles */
+  .home-page .section1 {
+    margin: 1em;
+  }
+
+  .section1 {
+    text-align: left;
+    margin: 0;
+  }
+
+  .section-text {
+    font-size: 2.5em;
+    left: 36%;
+  }
+
+  .section1 img {
+    height: 180px;
+  }
+
+  /* Collapse component */
+  .collapse-div {
+    width: 100%;
+  }
+
+  .svg-collapse {
+    left: 93%;
+  }
+
+  /* error page */
+  .error-page h1 {
+    font-size: 1.5em;
+  }
+
+  /* About page */
+  .about-page {
+    margin: 0 0.5em 0 0.5em;
+  }
+
+  /* Carousel Component */
+  .carousel-image {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .carousel-image img {
+    max-width: 100%;
+    height: 300px;
+  }
+
+  /* Property page */
+  .property-details {
+    flex-direction: column;
+  }
+
+  .host-rate-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1em;
+    margin-top: 0;
+  }
+
+  .property-page .carousel-image img {
+    height: 15em;
+  }
+
+  .property-page .dropdowns {
+    flex-direction: column;
+    gap: 1.5em;
+  }
+
+  .property-page .svg-collapse {
+    left: 94%;
+  }
+
+  .property-page .tag-div li {
+    width: 12em;
+    font-size: 10px;
+    padding: 1em;
+  }
+
+  .property-page .host-name {
+    font-size: 12px;
+    font-style: normal;
+  }
+
+  .property-page .rate-div svg {
+    width: 14px;
+    height: auto;
+  }
+
+  .property-page .title-text {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%;
+  }
+
+  .property-page .section-header {
+    font-size: 14px;
+  }
+
+  .property-page .section-header svg {
+    width: 14px;
+    height: auto;
+  }
+
+  .property-page .carousel-controls svg {
+    width: 35px;
+    height: auto;
+  }
+
+  /* Footer component */
+  .footer {
+    padding: 10px 0;
+  }
+  .footer img {
+    max-width: 80px;
+  }
+  .footer p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 375px) {
+  /* Header component */
+  header img {
+    max-width: 80px;
+  }
+
+  nav li {
+    margin: 5px 0;
+  }
+
+  nav a {
+    font-size: 16px;
+  }
+
+  /* Card Component */
+  .card-gallery-container {
+    margin: 0;
+  }
+
+  .card-image {
+    width: 19.5em;
+    height: 19.5em;
+  }
+
+  /* Carousel Component */
+  .carousel-image {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .carousel-image img {
+    max-width: 100%;
+    height: 150px;
+  }
+
+  /* Property page */
+  .property-page .carousel-controls svg {
+    width: 25px;
+    height: auto;
+  }
+
+  /* Collapse Component */
+  .collapse-div {
+    width: 90%;
+  }
+
+  .section-header {
+    font-size: 18px;
+  }
+
+  /* Tag Component */
+  .tag-div li {
+    margin: 0.5em 0.3em 0.5em 0.3em;
+    width: 6em;
+  }
+
+  /* Section styles */
+  .section1 {
+    text-align: left;
+    margin: 0;
+  }
+
+  .section-text {
+    font-size: 1.25em;
+    left: 36%;
+  }
+
+  .section1 img {
+    height: 111px;
+    width: 95%;
+  }
+
+  /* Collapse component */
+  .collapse-div {
+    width: 95%;
+  }
+
+  .property-page .section-header svg {
+    left: 88%;
+  }
+
+  /* Error page */
+  .error-page h1 {
+    font-size: 1em;
+  }
+
+  .error-page p {
+    font-size: 0.5em;
+  }
+
+  /* About page */
+  .about-page {
+    margin: 0 0.2em 0 0.2em;
+  }
+
+  /* Footer component */
+  .footer img {
+    max-width: 80px;
+  }
+  .footer p {
+    white-space: normal; /* allow text to wrap to the next line */
+  }
 }

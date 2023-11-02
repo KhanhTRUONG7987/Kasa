@@ -30,9 +30,9 @@ const Carousel = ({ pictures }) => {
             }`}
           >
             <img src={image} alt={`#${index + 1}`} />
-            <div className="image-index">
-              {index + 1}/{pictures.length}
-            </div>
+            <p className="carousel-index">
+              {currentIndex + 1}/{pictures.length}
+            </p>
           </div>
         ))}
       </div>
@@ -66,9 +66,6 @@ const Carousel = ({ pictures }) => {
           </svg>
         </div>
       </div>
-      <p className="carousel-index">
-          {currentIndex + 1}/{pictures.length}
-      </p>
     </div>
   );
 };

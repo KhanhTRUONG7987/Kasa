@@ -6,6 +6,10 @@
   justify-content: center;
 }
 
+.error-page h1 {
+  font-size: 3em;
+}
+
 .not-found-container {
   margin-top: 0.7em;
   display: flex;

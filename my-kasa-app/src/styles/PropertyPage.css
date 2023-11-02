@@ -1,11 +1,11 @@
-@import '../index.css'; /* Import global styles */
+@import "../index.css"; /* Import global styles */
 
 .property-page {
-  margin: 0 2em 0 2em;
+  margin: 0 2em;
 }
 
 .wrapper {
-  padding: 0em 2em 0em 2em;
+  padding: 0em 2em;
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -39,10 +39,18 @@
   color: #ff6060;
 }
 
+.host-rate-div {
+  display: flex;
+  flex-direction:column-reverse;
+  justify-content: flex-end;
+  gap: 1em;
+  margin-top: -7em;
+}
+
 .host-div {
   display: flex;
   gap: 0.5em;
-  justify-content: space-between;
+  justify-content: right;
 }
 
 .host-name {
@@ -51,6 +59,7 @@
   max-width: 4.5em;
   align-self: center;
   text-align: right;
+  color: #ff6060;
 }
 
 .host-picture img {
@@ -60,10 +69,11 @@
   object-fit: cover;
 }
 
-.tag-rate-div {
+.tag-div {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: left;
+  gap: 0.3em;
 }
 
 .rate-div {
@@ -71,6 +81,7 @@
   gap: 4px;
   align-items: center;
   color: #ff6060;
+  justify-content: right;
 }
 
 .svg-inline--fa {
@@ -110,4 +121,3 @@ ul.contenu-ul {
   gap: 0.5em;
   padding: 1.5em 1em 1.5em 1em;
 }
-

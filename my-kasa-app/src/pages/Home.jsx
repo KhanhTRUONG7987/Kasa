@@ -9,8 +9,8 @@ import "../styles/HomePage.css";
 function Home() {
   const selected = data.filter((property) => property);
   return (
-    <div>
-      <main className="home-page">
+    <div className="home-page">
+      <main>
         <section className="section1">
           <img
             src={require("../assets/images/Image source 1.png")}
