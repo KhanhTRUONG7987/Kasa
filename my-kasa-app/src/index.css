@@ -157,9 +157,18 @@ body {
     font-size: 1.5em;
   }
 
+  /* home page */
+  .home-page {
+    margin-bottom: 3em;
+  }
+
   /* About page */
   .about-page {
     margin: 0 0.5em 0 0.5em;
+  }
+
+  .about-page {
+    margin-bottom: 5em;
   }
 
   .about-page .section-header {
@@ -348,8 +357,8 @@ body {
 
   /* About page */
   .about-page {
-    margin: 0 0.2em 0 0.2em;
-  }
+    margin: 0 0.2em 6em 0.2em;
+  } 
 
   .about-page .section-header {
     font-size: 1em;
