@@ -66,6 +66,10 @@ body {
   .about-page {
     margin: 0 1em 0 1em;
   }
+
+  .about-page .section-header svg {
+    left: 94.5%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -138,6 +142,14 @@ body {
   /* About page */
   .about-page {
     margin: 0 0.5em 0 0.5em;
+  }
+
+  .about-page .section-header {
+    font-size: 1.1em;
+  }
+
+  .about-page .section-header svg {
+    left: 93%;
   }
 
   /* Carousel Component */
@@ -319,6 +331,14 @@ body {
   /* About page */
   .about-page {
     margin: 0 0.2em 0 0.2em;
+  }
+
+  .about-page .section-header {
+    font-size: 1em;
+  }
+
+  .about-page .section-header svg {
+    left: 88%;
   }
 
   /* Footer component */
