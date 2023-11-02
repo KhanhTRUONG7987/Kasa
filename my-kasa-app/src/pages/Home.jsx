@@ -21,12 +21,15 @@ function Home() {
         <div className="card-gallery-container">
           <div className="card-gallery">
             {selected.map((property) => (
-              <Link to={`/property/${property.id}`} key={property.id}>
+              <Link
+                to={`/property/${property.id}`}
+                key={property.id}
+                className="card-div"
+              >
                 <Card
                   image={property.cover}
                   title={property.title}
                   id={property.id}
-                  className="card"
                 />
               </Link>
             ))}

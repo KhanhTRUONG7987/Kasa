@@ -8,13 +8,13 @@
 .carousel-images {
   display: flex;
   width: 100%;
-  transition: transform 0.3s ease-in-out, border-radius 0.3s easy-in-out;
   position: relative;
 }
 
 .carousel-image {
   flex: 0 0 100%;
   position: relative;
+  transition: transform 0.3s ease-in-out, border-radius 0.3s ease-in-out; 
 }
 
 .carousel-image img {
@@ -28,7 +28,7 @@
 .carousel-image.active {
   transform: translateX(0);
   border-radius: 1em;
-} 
+}
 
 .carousel-controls {
   display: flex;
@@ -59,7 +59,7 @@
 
 .carousel-index {
   position: absolute;
-  bottom: 2em; 
+  bottom: 2em;
   left: 50%;
   transform: translateX(-50%);
   color: #fff;

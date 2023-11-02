@@ -11,8 +11,8 @@
   gap: 1em;
 }
 
-.carousel {
-  margin-top: 2.5em;
+.property-page .carousel {
+  margin-top: 1.5em;
 }
 
 .property-details {
@@ -31,17 +31,24 @@
 }
 
 .title-text {
-  font-size: 20px;
-  font-weight: 600;
+  color: #ff6060;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%;
 }
 
 .location-text {
   color: #ff6060;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%;
 }
 
 .host-rate-div {
   display: flex;
-  flex-direction:column-reverse;
+  flex-direction: column-reverse;
   justify-content: flex-end;
   gap: 1em;
   margin-top: -7em;
@@ -60,6 +67,10 @@
   align-self: center;
   text-align: right;
   color: #ff6060;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%;
 }
 
 .host-picture img {
@@ -78,7 +89,7 @@
 
 .rate-div {
   display: flex;
-  gap: 4px;
+  gap: 9.5px;
   align-items: center;
   color: #ff6060;
   justify-content: right;
@@ -95,7 +106,17 @@ svg.active {
 
 .tag {
   margin-top: 20px;
-  font-size: 16px;
+  color: #fff;
+}
+
+.tag-div li {
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%;
+  list-style: none;
+  border-radius: 10px;
 }
 
 .property-page .dropdowns {
@@ -106,7 +127,12 @@ svg.active {
 }
 
 .section-header {
-  border-radius: 0.6em;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%;
 }
 
 li.contenu-li {

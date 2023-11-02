@@ -7,3 +7,8 @@
 .home-page .section1 {
   margin: 2em 4em 2em 4em;
 }
+
+.home-page .section1::before {
+  background: rgba(0, 0, 0, 0.3); 
+  mix-blend-mode: darken; 
+}
