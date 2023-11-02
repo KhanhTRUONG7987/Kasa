@@ -295,7 +295,7 @@ body {
 
   /* Card Component */
   .card-gallery-container {
-    margin: 0;
+    margin: 0.5em;
   }
 
   /* Carousel Component */
