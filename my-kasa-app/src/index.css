@@ -37,9 +37,19 @@ body {
   }
 
   /* Card Component */
+  /* .card-gallery a {
+    width: 100%;
+    aspect-ratio: 1/1;
+  }  */
+  
   .card-image {
-    width: 23.5em;
-    height: 23.5em;
+    width: 100%;
+    aspect-ratio: 1/1;
+  }
+
+  .card-gallery-container {
+    background: #fff;
+    margin: 0.5em;
   }
 
   /* Section styles */
@@ -102,8 +112,8 @@ body {
   }
 
   .card-image {
-    width: 29em;
-    height: 29em;
+    width: 100%;
+    aspect-ratio: 1;
   }
 
   /* Section styles */
@@ -255,11 +265,6 @@ body {
   /* Card Component */
   .card-gallery-container {
     margin: 0;
-  }
-
-  .card-image {
-    width: 19.5em;
-    height: 19.5em;
   }
 
   /* Carousel Component */
