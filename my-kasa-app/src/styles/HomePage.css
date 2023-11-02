@@ -2,10 +2,11 @@
 
 .home-page {
   justify-content: center;
+  margin: 0.5em 4em 4em 4em;
 }
 
 .home-page .section1 {
-  margin: 2em 4em 2em 4em;
+  margin: 0.2em;
 }
 
 .home-page .section1::before {

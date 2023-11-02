@@ -3,7 +3,8 @@
 .card-gallery-container {
   display: flex;
   border-radius: 25px;
-  margin: 4em;
+  padding: 50px 50px 0px 50px;
+  margin-top: 3em;
   background: #f6f6f6;
   justify-content: space-between; /* distribute cards evenly */
 }

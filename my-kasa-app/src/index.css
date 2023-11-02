@@ -52,6 +52,15 @@ body {
     left: 90%;
   }
 
+  .home-page {
+    justify-content: center;
+    margin: 0.5em;
+}
+
+.card-gallery-container {
+  padding: 0px;
+}
+
   /* error page */
   .error-page h1 {
     font-size: 2em;
@@ -191,6 +200,9 @@ body {
   }
 
   /* Property page */
+  .property-page {
+    margin: 0.5em;
+}
 
   .property-page .wrapper {
     margin-bottom: 3em;
@@ -359,6 +371,10 @@ body {
   .about-page {
     margin: 0 0.2em 6em 0.2em;
   } 
+
+  .about-page .dropdowns {
+    margin: 2em 0.5em 0 0.5em;   
+}
 
   .about-page .section-header {
     font-size: 1em;
