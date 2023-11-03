@@ -55,11 +55,11 @@ body {
   .home-page {
     justify-content: center;
     margin: 0.5em;
-}
+  }
 
-.card-gallery-container {
-  padding: 0px;
-}
+  .card-gallery-container {
+    padding: 0px;
+  }
 
   /* error page */
   .error-page h1 {
@@ -170,6 +170,14 @@ body {
   .home-page {
     margin-bottom: 3em;
   }
+  .home-page .section1 {
+    margin: 0.5em 0 1.5em 0em;
+  }
+
+  .card-gallery-container {
+    background: #fff;
+    margin: 0em;
+  }
 
   /* About page */
   .about-page {
@@ -202,7 +210,7 @@ body {
   /* Property page */
   .property-page {
     margin: 0.5em;
-}
+  }
 
   .property-page .wrapper {
     margin-bottom: 3em;
@@ -267,7 +275,7 @@ body {
   }
 
   .property-page .carousel {
-    margin-top: 1.5em;
+    margin-top: 0.5em;
   }
 
   /* Footer component */
@@ -307,7 +315,7 @@ body {
 
   /* Card Component */
   .card-gallery-container {
-    margin: 0.5em;
+    margin: 0.5em 0;
   }
 
   /* Carousel Component */
@@ -367,14 +375,20 @@ body {
     font-size: 0.5em;
   }
 
+  /* Home page */
+  .section1 img {
+    height: 111px;
+    width: 100%;
+  }
+
   /* About page */
   .about-page {
     margin: 0 0.2em 6em 0.2em;
-  } 
+  }
 
   .about-page .dropdowns {
-    margin: 2em 0.5em 0 0.5em;   
-}
+    margin: 2em 0.5em 0 0.5em;
+  }
 
   .about-page .section-header {
     font-size: 1em;
@@ -423,6 +437,6 @@ body {
   }
 
   .property-page .carousel {
-    margin-top: 1em;
+    margin-top: 0em;
   }
 }
