@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import "../styles/Collapse.css";
 
@@ -9,17 +9,34 @@ const Collapse = ({ children, topBar }) => {
     setIsOpen(!isOpen);
   };
 
+  useEffect(() => {
+    const handleDocumentClick = (event) => {
+      if (!event.target.closest(".collapse-div")) {
+        // If the click is not within the Collapse component, close it
+        setIsOpen(false);
+      }
+    };
+
+    if (isOpen) {
+      // Add the event listener if the Collapse is open
+      document.addEventListener("click", handleDocumentClick);
+    } else {
+      // Remove the event listener if the Collapse is closed
+      document.removeEventListener("click", handleDocumentClick);
+    }
+
+    return () => {
+      // Cleanup by removing the event listener when the component unmounts
+      document.removeEventListener("click", handleDocumentClick);
+    };
+  }, [isOpen]);
+
   return (
     <div className="collapse-div">
-      <div
-        onClick={toggleCollapse}
-        className={`section-header ${isOpen ? "active" : ""}`}
-      >
+      <div onClick={toggleCollapse} className={`section-header ${isOpen ? "active" : ""}`}>
         {topBar}
         <svg
-          className={`svg-collapse ${
-            isOpen ? "svg-collapse-down" : "svg-collapse-up"
-          }`}
+          className={`svg-collapse ${isOpen ? "svg-collapse-down" : "svg-collapse-up"}`}
           xmlns="http://www.w3.org/2000/svg"
           width="25"
           height="14"

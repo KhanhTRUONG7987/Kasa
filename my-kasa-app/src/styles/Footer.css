@@ -18,3 +18,17 @@
     color: #FFFFFF;
     margin: 0;
 }
+
+@media (max-width: 768px) {
+/* Footer component */
+.footer {
+    padding: 2em;
+  }
+  .footer img {
+    max-width: 80px;
+  }
+  .footer p {
+    max-width: 30%;
+    margin: 0 auto;
+  }
+}

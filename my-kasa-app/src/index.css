@@ -97,10 +97,6 @@ body {
 
 @media (max-width: 768px) {
   /* Header component */
-  header {
-    margin: 0.5em;
-  }
-
   .property-page header {
     padding: 2em;
   }

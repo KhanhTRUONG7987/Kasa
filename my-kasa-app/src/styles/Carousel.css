@@ -69,3 +69,78 @@
   font-weight: 500;
   z-index: 1000;
 }
+
+@media (max-width: 1024px) {
+  /* Carousel Component */
+  .carousel-image img {
+    height: 380px;
+  }
+
+  /* Section styles */
+  .home-page .section1 {
+    margin: 0.5em 0.5em 1.5em 0.5em;
+  }
+
+  /* About page */
+  .about-page {
+    margin: 0 1em 0 1em;
+  }
+
+  /* Property page */
+  .property-page .wrapper {
+    padding: 0;
+  }
+
+  .property-page .carousel {
+    margin-top: 1.5em;
+  }
+
+  .about-page .section-header svg {
+    left: 94.5%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Carousel Component */
+  .carousel-image {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .property-page .carousel-image img {
+    max-width: 100%;
+    height: 300px;
+  }
+
+  .property-page .carousel-controls svg {
+    width: 24px;
+    height: auto;
+  }
+
+  .property-page .carousel {
+    margin-top: 0.5em;
+  }
+}
+
+@media (max-width: 375px) {
+  /* Carousel Component */
+  .carousel-image {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .carousel-image img {
+    max-width: 100%;
+    height: 255px;
+  }
+
+  /* Property page */
+  .property-page .carousel {
+    margin-top: 0em;
+  }
+
+  .property-page .carousel-controls svg {
+    width: 25px;
+    height: auto;
+  }
+}
