@@ -157,6 +157,10 @@ body {
     width: 100%;
   }
 
+  .svg-collapse-down {
+    top: 40%;
+  }
+
   .about-page .section-header {
     font-size: 13px;
     font-style: normal;
