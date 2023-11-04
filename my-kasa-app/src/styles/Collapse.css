@@ -1,4 +1,4 @@
-@import '../index.css'; /* Import global styles */
+@import "../index.css"; /* Import global styles */
 
 .collapse-div {
   width: 80%;
@@ -33,11 +33,16 @@
   transition: max-height 0.3s ease-in-out, transform 0.3s ease-in-out;
   transform-origin: top;
   transform: scaleY(0); /* Initially set */
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.6%;
 }
 
 .collapse-content.open {
   max-height: 100%; /* expand to the full height */
-  transform: scaleY(1); 
+  transform: scaleY(1);
   margin-top: -0.35em;
   z-index: 3;
 }
@@ -62,14 +67,14 @@
 
 .svg-collapse {
   position: absolute;
-  left: 93%; 
+  left: 93%;
   transition: transform 0.3s ease-in-out;
   transform: rotate(-180deg); /* initially rotated to the left */
 }
 
 .svg-collapse-down {
   transform: rotate(0deg);
-  top: 30%; 
+  top: 30%;
 }
 
 .svg-collapse-up {

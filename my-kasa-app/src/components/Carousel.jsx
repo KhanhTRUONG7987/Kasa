@@ -1,25 +1,43 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/Carousel.css";
 
 const Carousel = ({ pictures }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isSliding, setIsSliding] = useState(false);
 
   const handlePrevClick = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? prevIndex : prevIndex - 1
-    );
+    if (currentIndex === 0) return;
+
+    setCurrentIndex((prevIndex) => prevIndex - 1);
+    setIsSliding(true);
   };
 
   const handleNextClick = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === pictures.length - 1 ? prevIndex : prevIndex + 1
-    );
+    if (currentIndex === pictures.length - 1) return;
+
+    setCurrentIndex((prevIndex) => prevIndex + 1);
+    setIsSliding(true);
   };
+
+  useEffect(() => {
+    if (isSliding) {
+      const timeoutId = setTimeout(() => {
+        setIsSliding(false);
+      }, 500); // 0.5 seconds
+
+      return () => clearTimeout(timeoutId);
+    }
+  }, [isSliding]);
 
   return (
     <div className="carousel">
+      <div className="carousel-index">
+        <p>
+          {currentIndex + 1}/{pictures.length}
+        </p>
+      </div>
       <div
-        className="carousel-images"
+        className={`carousel-images ${isSliding ? "sliding" : ""}`}
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {pictures.map((image, index) => (
@@ -30,9 +48,6 @@ const Carousel = ({ pictures }) => {
             }`}
           >
             <img src={image} alt={`#${index + 1}`} />
-            <p className="carousel-index">
-              {currentIndex + 1}/{pictures.length}
-            </p>
           </div>
         ))}
       </div>

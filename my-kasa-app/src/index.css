@@ -157,6 +157,19 @@ body {
     width: 100%;
   }
 
+  .about-page .section-header {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%;
+  }
+  .collapse-content {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 142.6%;
+  }
+
   .svg-collapse {
     left: 93%;
   }
@@ -188,13 +201,11 @@ body {
     margin-bottom: 5em;
   }
 
-  .about-page .section-header {
-    font-size: 1.1em;
-  }
-
   .about-page .section-header svg {
+    width: 14px;
+    height: auto;
     left: 93%;
-  }
+  } 
 
   /* Carousel Component */
   .carousel-image {
@@ -261,7 +272,7 @@ body {
   }
 
   .property-page .section-header {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .property-page .section-header svg {
